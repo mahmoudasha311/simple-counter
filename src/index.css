@@ -29,4 +29,69 @@ body {
   padding: 2.4rem;
 }
 
+#root {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr 1fr;
+  gap: 100px;
+  align-content: center;
+  align-items: center;
+}
+
+/* Settings.css */
+.counter {
+  grid-row: 2;
+  grid-column: 2;
+}
+.settings-container {
+  grid-column: 3;
+  grid-row: 2;
+  padding: 1rem;
+  color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.settings-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 10px;
+  box-shadow: 0 0 0 5px transparent, 0 0 0 10px #0ba360, 0 0 0 15px #3cba92;
+}
+
+.limit {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.value-limit {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.value-limit:first-of-type {
+  grid-column: 1;
+}
+
+.value-limit:last-of-type {
+  grid-column: 2;
+}
+
+.value-limit label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.value-limit input {
+  font-size: 20px;
+  padding: 5px;
+  width: 130px;
+}
 /* ******* */
